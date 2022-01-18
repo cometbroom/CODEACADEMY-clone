@@ -16,6 +16,7 @@
     .right-bar a {
         font-size: 0.9em;
         width: 60%;
+        padding: 0px 10px;
     }
     .right-bar i.fa-bars {
         display: block;
