@@ -1,0 +1,40 @@
+section.sign-up {
+    grid-column: 1/-1;
+    background-color: var(--var-bg-3);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, fit-content(100%));
+}
+
+section.sign-up img {
+    grid-column: 2/8;
+    grid-row: 1/-1;
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+}
+
+section.sign-up h2 {
+    grid-column: -6/-3;
+    grid-row: 1/2;
+}
+
+section.sign-up p {
+    grid-column: -6/-3;
+    grid-row: 2/3;
+}
+
+section.sign-up button {
+    grid-column: -6/-4;
+    grid-row: 3/4;
+    background-color: var(--var-bg-4);
+    font-weight: 700;
+    font-size: 1em;
+    width: 55%;
+    line-height: 0.2;
+    transition: filter 0.3s;
+}
+section.sign-up button:hover {
+    filter: brightness(80%);
+}

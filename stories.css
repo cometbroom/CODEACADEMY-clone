@@ -1,0 +1,65 @@
+section.stories {
+    grid-column: 2/-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-bottom: 30px;
+}
+
+section.stories h2 {
+    grid-column: 1/-1;
+    font-size: 2.8em;
+    line-height: normal;
+    font-weight: 600;
+}
+
+section.stories span {
+    grid-column: 1/-1;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.stories span a {
+    text-decoration: none;
+    color: var(--var-bg-3);
+    font-weight: 600;
+    border-radius: 2px;
+    padding: 5px 15px;
+}
+section.stories a:hover {
+    background-color: #f1e3db;
+}
+
+section.stories span i {
+    font-size: 0.7em;
+    margin-left: 2px;
+}
+
+section.stories .profile-card {
+    grid-column: span 1;
+    cursor: pointer;
+}
+
+.profile-card:hover {
+    color: var(--var-bg-3);
+}
+
+.profile-card img {
+    width: 100%;
+    border: 1px solid black;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profile-card h3 {
+    padding-right: 10rem;
+}
+
+.profile-card p {
+    font-family: "Suisse", "Apercu", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    padding-right: 10rem;
+    font-weight: 100;
+}

@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+:root {
+    --var-bg-1: #fff0e5;
+    --var-bg-2: #10162f;
+    --var-bg-3: #3a10e5;
+    --var-bg-4: #ffd300;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: var(--var-bg-1);
+    line-height: 1.5rem;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+h2 {
+    font-size: 2.3em;
+}
+
+body header {
+    grid-column: 2/-2;
+    height: 55px;
+    margin: 12px 0px;
+    padding: 0.75rem 0px;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.top-nav svg {
+    flex: 1;
+}
+
+.top-nav ul {
+    flex: 4;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.top-nav ul li {
+    padding: 0px 8px;
+    font-weight: 600;
+}
+.dropdown {
+    display: flex;
+}
+
+.dropdown svg {
+    width: 12px;
+    height: 12px;
+    margin: 0px 0px 2px 4px;
+    align-self: flex-end;
+}
+.dropdown span {
+    align-self: center;
+}
+
+.top-nav .right-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.right-bar svg {
+    height: 100%;
+    width: 40px;
+    flex: 0 0 auto;
+    padding: 7px 0px;
+    cursor: pointer;
+}
+
+.right-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #5131f3;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+}
+
+.right-bar i.fa-bars {
+    display: none;
+    font-size: 1.2em;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+    padding: 7px;
+}
+
+.right-bar :nth-child(n):hover {
+    background-color: #f1e3db;
+    border-radius: 5px;
+}
+
+section,
+footer {
+    grid-column: 2/-2;
+    padding: 5rem 0rem;
+}
+
+section.body {
+    display: flex;
+    gap: 50px;
+}
+
+section.body .login-img {
+    align-self: center;
+    flex: 1;
+}
+.login-img img {
+    width: 100%;
+}
+
+section.body .login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form h2 {
+    line-height: 1.4;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form form div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.login-form label {
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.login-form input {
+    height: 3rem;
+}
+
+.login-form button {
+    background-color: #5131f3;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 15px;
+    border: none;
+}
+
+.login-form .disclaimer-login {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.login-form .external-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.external-login span {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.external-login .ext-login-btns {
+    display: flex;
+    gap: 6px;
+}
+.ext-login-btns i {
+    background-color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border: solid black 1px;
+    cursor: pointer;
+    filter: brightness(100%);
+    transition: filter 0.2s ease-in;
+}
+.ext-login-btns i:hover {
+    filter: brightness(80%);
+}
+.fa-linkedin {
+    color: #0e70a1;
+}
+.fa-google {
+    color: #dd4035;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
